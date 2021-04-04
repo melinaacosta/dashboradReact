@@ -1,4 +1,4 @@
-import React from 'react';
+
 import avatar from "../assets/images/avatar.jpg"
 import "../assets/css/Navbar.css"
 

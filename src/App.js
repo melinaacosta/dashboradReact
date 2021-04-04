@@ -10,7 +10,7 @@ import Main from "./components/Main";
 
 
 const App = () => {
-  const [sidebarOpen,setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const openSidebar = () => {
     setSidebarOpen(true);
   };

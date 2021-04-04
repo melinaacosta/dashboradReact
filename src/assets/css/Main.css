@@ -113,6 +113,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffff;
 }
 
 .charts__right__title > div > h1{
@@ -121,14 +122,15 @@ main{
     margin-bottom: 5px;
 }
 
-.charts__right__title>div > p{
+.charts__right__title > div > p{
     font-size: 14px;
     font-weight: 700;
     color: #a5aaad;
 }
 
-.charts__right__title>i{
+.charts__right__title > i{
     color: #ffff;
+    font-size: 20px;
     background: #39447a;
     border-radius: 200px 0px 200px 200px;
    
@@ -138,9 +140,9 @@ main{
 
 .charts__right__cards{
     display: grid;
-    /* grid-template-columns:  1fr 1fr;
+    grid-template-columns:  1fr 1fr;
     justify-content: stretch;
-    gap: 10px; */
+    gap: 10px;
     margin-top: 20px;
 }
 

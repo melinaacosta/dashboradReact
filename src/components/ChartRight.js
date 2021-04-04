@@ -15,11 +15,11 @@ class ChartRight extends Component {
             <div className="charts__right__title">
                 <div>
                     <h1>
-                        Categories
+                        Categorias
                         </h1>
                     <p>Buenos Aires, Argentina</p>
                 </div>
-                <i className="fa fa-use"></i>
+                <i className="fa fa-usd"></i>
             </div>
             <div className="charts__right__cards">
                 <div className="card1">

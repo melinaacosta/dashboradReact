@@ -6,18 +6,11 @@
     
 }
 
-h1{
-    
-    color: #9b9191;
-    display: block;
-    font-size: 20px;
-    
-    
-}
+
 
 .table {
     text-align: center;
-    
+    color: #2e4a66;;
     display: table;
     border-collapse: separate;
     box-sizing: border-box;
@@ -30,6 +23,7 @@ h1{
 
 
 tr {
+    color: #2e4a66;;
     width: 20%;
     text-align: left;
     border-bottom: 1px solid grey;
@@ -37,18 +31,21 @@ tr {
 }
 
 tfoot {
+    color: #2e4a66;
     display: table-footer-group;
     vertical-align: middle;
     border-color: inherit;
 }
 
 thead {
+    color: #2e4a66;
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
 }
 
 th {
+    color: #2e4a66;
     text-align: left;
     width: 20%;
     display: table-cell;
@@ -60,5 +57,11 @@ th {
 
 
 td {
+    color: #2e4a66;
     width: 20%;
+}
+
+.h1{
+    color: #2e4a66;
+    font-size: 20px;
 }

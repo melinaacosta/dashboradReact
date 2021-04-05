@@ -140,7 +140,7 @@ class List extends Component {
     render() {
         return (
             <div className="shadow mb-4">
-                <h1 className="h3 mb-2 text-gray">All the products in the Database</h1>
+                <h1 className="h1">All the products in the Database</h1>
                 <div>
                     <div>
                         <table className="table table-bordered" id="dataTable">

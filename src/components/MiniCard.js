@@ -35,7 +35,7 @@ class MiniCard extends Component {
     ultimoProducto = (data) => {
         // console.log(data)
         this.setState({
-            name: data.data.name,  // en el state de este comnponente seteale en la propiedad  total el valor data.meta.total
+            nombre: data.data.name,  // en el state de este comnponente seteale en la propiedad  total el valor data.meta.total
            price: data.data.price,
            color: data.data.color_id,
            talle: data.data.size_id,
@@ -55,7 +55,7 @@ class MiniCard extends Component {
                 </div>
                 <div className="car">
                         <h3>Productos</h3>
-                        <p>Nombre: {this.state.name}</p>
+                        <p>Nombre: {this.state.nombre}</p>
                         <p>Precio: $ {this.state.price}</p>
                         <p>Color: {this.state.color}</p>
                         <p>Talle: {this.state.talle}</p>

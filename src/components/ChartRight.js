@@ -26,23 +26,14 @@ class ChartRight extends Component {
                     <h1>Remera</h1>
                     <p>kkkkk</p>
                 </div>
-
-            </div>
-            <div className="charts__right__cards">
                 <div className="card2">
                     <h1>Buzos</h1>
                     <p>kkkkk</p>
                 </div>
-
-            </div>
-            <div className="charts__right__cards">
                 <div className="card3">
                     <h1>Jeans</h1>
                     <p>kkkkk</p>
                 </div>
-
-            </div>
-            <div className="charts__right__cards">
                 <div className="card4">
                     <h1>kkkk</h1>
                     <p>kkkkk</p>

@@ -4,6 +4,7 @@ import hello from "../assets/images/hellos.jpg"
 import Chart from "../components/Charts";
 import Card from "../components/Card";
 import ChartRight from "../components/ChartRight";
+import MiniCard from "../components/MiniCard";
 
 class Main extends Component {
     constructor(props) {
@@ -33,13 +34,15 @@ class Main extends Component {
                             <div className="charts__left__title">
                                 <div>
                                     <h1>
-                                        Daily Reports
+                                        Daily Reports 
                                         </h1>
-                                    <p>Buenos Aires, Argentina</p>
+                                    <p>Últimos creados</p>
                                 </div>
                                 <i className="fa fa-usd"></i>
                             </div>
-                            <Chart />
+                            <MiniCard/>
+                            
+
                         </div>
                     </div>
                     

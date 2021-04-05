@@ -5,6 +5,7 @@ import './assets/css/App.css';
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Main from "./components/Main";
+import List from "./components/List";
 // import Index from "./components/Index"
 // import Bienvenida from "./components/Bienvenida"
 
@@ -24,7 +25,7 @@ const App = () => {
      {/* <h1>App Dashboard</h1> */}
      <Main nombre="Melina" />
      <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
-     
+     <List/>
     </div>
   );
 }

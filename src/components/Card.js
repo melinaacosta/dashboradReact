@@ -7,7 +7,8 @@ class Card extends Component {
         super(props);   //ejecuta el constructor de component que es una clase de react
         this.state = {
             total: 0,
-            user: 0
+            user: 0,
+            category: 0
         }
     }
 
@@ -21,6 +22,7 @@ class Card extends Component {
     componentDidMount() {
         this.apiCall("http://localhost:3000/api/products", this.totalProductos);
         this.apiCall("http://localhost:3000/api/users", this.totalUsuarios);
+        this.apiCall("http://localhost:3000/api/products/18", this.totalCategorias);
     }
 
     totalProductos = (data) => {
@@ -34,6 +36,12 @@ class Card extends Component {
     totalUsuarios = (data) => {
         this.setState({
             user: data.meta.total,
+        })
+    }
+
+    totalCategorias = (data) => {
+        this.setState({
+            category: data.meta.category,
         })
     }
 
@@ -56,7 +64,7 @@ class Card extends Component {
             <i className=" fa fa-child fa-3x text-red"></i>
             <div className="card_inner">
                 <p className="text-primary-p">Total categorias</p>
-                <span className="font-bold text-title">2475</span>
+                <span className="font-bold text-title">{this.state.category}</span>
             </div>
         </div>
         <div className="card">

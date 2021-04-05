@@ -1,0 +1,18 @@
+.minicard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: stretch;
+    grid-gap: 10px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.car{
+    text-align: left;
+    background: #d1ebf1;
+    color: #02665c;
+    
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 14px;
+}

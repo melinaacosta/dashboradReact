@@ -1,5 +1,5 @@
 
-import avatar from "../assets/images/avatar.jpg"
+import avatar from "../assets/images/avatar.jpeg"
 import "../assets/css/Navbar.css"
 
 
@@ -22,7 +22,7 @@ const Navbar = ({sidebarOpen, openSidebar}) =>{
                 <i className="fa fa-clock-o"></i>
             </a>
             <a href="/">
-                <img width="30" src={avatar} alt="avatar"></img>
+                <img className="avatar" width="30" src={avatar} alt="avatar"></img>
             </a>
          </div>
 

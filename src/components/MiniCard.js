@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import "../assets/css/MiniCard.css";
+import Gif from "../components/Gif"
+
 
 class MiniCard extends Component {
     constructor(props) {
         super(props);   //ejecuta el constructor de component que es una clase de react
         this.state = {
-           
+           gif: []
         }
     }
 
@@ -19,7 +21,14 @@ class MiniCard extends Component {
     componentDidMount() {
         this.apiCall("http://localhost:3000/api/users/11", this.ultimoUsuario);
         this.apiCall("http://localhost:3000/api/products/29", this.ultimoProducto);
+        this.apiCall("https://api.giphy.com/v1/stickers/search?api_key=Ig58t66aRax83EjnSyPrneQbEPEtUN3x&q=webdesign&limit=1&offset=0&rating=g&lang=en", this.gif)
         
+    }
+
+    gif = (data) => {
+        this.setState({
+            gif: data.data
+        })
     }
 
     ultimoUsuario = (data) => {
@@ -60,8 +69,12 @@ class MiniCard extends Component {
                         <p>Color: {this.state.color}</p>
                         <p>Talle: {this.state.talle}</p>
                         <p>Status: {this.state.status}</p>
+                        
                 </div>
-
+                {this.state.gif.map((gif)=> { return <Gif gif={gif} /> })}
+                
+                
+               
             </div>
         );
     }

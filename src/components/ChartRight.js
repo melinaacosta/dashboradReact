@@ -1,13 +1,36 @@
 import React, { Component } from 'react';
 import "../assets/css/Main.css";
+import MiniChart from "../components/miniChart"
 
 class ChartRight extends Component {
     constructor(props) {
         super(props);   //ejecuta el constructor de component que es una clase de react
         this.state = {
-            total: 0
+            arrayCategorias: []
         }
     }
+
+    apiCall(url, consecuencia) {
+        fetch(url)
+            .then(response => response.json())
+            .then(data => consecuencia(data))
+            .catch(e => console.log(e))
+    }
+
+    componentDidMount() {
+        this.apiCall("http://localhost:3000/api/products/category", this.categorias);
+       
+
+        
+    }
+
+   categorias = (data) => {
+        // console.log(data)
+        this.setState({
+            arrayCategorias: data.data,  // en el state de este comnponente seteale en la propiedad  total el valor data.meta.total
+        })
+    }
+
 
     render() {
         return (
@@ -22,22 +45,7 @@ class ChartRight extends Component {
                 <i className="fa fa-usd"></i>
             </div>
             <div className="charts__right__cards">
-                <div className="card1">
-                    <h1>Remera</h1>
-                    <p>kkkkk</p>
-                </div>
-                <div className="card2">
-                    <h1>Buzos</h1>
-                    <p>kkkkk</p>
-                </div>
-                <div className="card3">
-                    <h1>Jeans</h1>
-                    <p>kkkkk</p>
-                </div>
-                <div className="card4">
-                    <h1>kkkk</h1>
-                    <p>kkkkk</p>
-                </div>
+            {this.state.arrayCategorias.map((categoria)=> { return <MiniChart category={categoria} />})}
 
             </div>
         </div>

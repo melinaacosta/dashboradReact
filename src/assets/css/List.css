@@ -6,11 +6,26 @@
     
 }
 
+.shadow{
+    padding: 20px 35px;
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffff;
+}
 
 
 .table {
+    background: #fddcdf;
+    color: #f65a6f;
+    
     text-align: center;
-    color: #2e4a66;;
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 20px 35px;
+    text-align: center;
+    
     display: table;
     border-collapse: separate;
     box-sizing: border-box;
@@ -23,29 +38,28 @@
 
 
 tr {
-    color: #2e4a66;;
+    color: #f65a6f;
     width: 20%;
     text-align: left;
-    border-bottom: 1px solid grey;
-    border-color: 1px solid grey;
+   
 }
 
 tfoot {
-    color: #2e4a66;
+    color: #f65a6f;
     display: table-footer-group;
     vertical-align: middle;
     border-color: inherit;
 }
 
 thead {
-    color: #2e4a66;
+    color: #f65a6f;
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
 }
 
 th {
-    color: #2e4a66;
+    color: #f65a6f;
     text-align: left;
     width: 20%;
     display: table-cell;
@@ -57,11 +71,15 @@ th {
 
 
 td {
-    color: #2e4a66;
+    color: #f65a6f;
     width: 20%;
 }
 
 .h1{
-    color: #2e4a66;
+    color: #f65a6f;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffff;
 }

@@ -70,13 +70,14 @@ main{
     padding: 25px;
     border-radius: 5px;
     background: #ffff;
-    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffff;
+    /* box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffff; */
 }
 
 .charts__left__title{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffff;
 }
 
 .charts__left__title >div >h1{
@@ -106,7 +107,7 @@ main{
     padding: 25px;
     border-radius: 5px;
     background: #ffff;
-    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffff;
+    /* box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffff; */
 
 }
 .charts__right__title{
@@ -159,7 +160,7 @@ main{
     background: #d2f9ee;
     color: #38e1b0;
     text-align: center;
-    padding: 25px;
+    padding: 8px;
     border-radius: 5px;
     font-size: 14px;
 }

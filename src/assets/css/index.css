@@ -2,7 +2,7 @@
 
 /* scrollbar */
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
   width: 5px;
   height: 6px;
 }
@@ -10,16 +10,16 @@
 ::-webkit-scrollbar-track{
   box-shadow: inset 0 0 5px #a5aaad;
   border-radius: 10px;
-}
+} */
 
-::-webkit-scrollbar-thumb{
+/* ::-webkit-scrollbar-thumb{
   background: #3e92a1;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
   background: #a5aaad;
-}
+} */
 
 /* general*/
 
@@ -64,7 +64,7 @@ body{
 }
 
 .container{
-  display: grid;
+  /* display: grid; */
   height: 100vh;
   grid-template-columns: 0.8fr 1fr 1fr 1fr;
   grid-template-rows:  0.2fr 3fr;

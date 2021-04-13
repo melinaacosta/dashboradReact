@@ -20,7 +20,7 @@ class MiniCard extends Component {
 
     componentDidMount() {
         this.apiCall("http://localhost:3000/api/users/11", this.ultimoUsuario);
-        this.apiCall("http://localhost:3000/api/products/29", this.ultimoProducto);
+        this.apiCall("http://localhost:3000/api/products/ultimo", this.ultimoProducto);
         this.apiCall("https://api.giphy.com/v1/stickers/search?api_key=Ig58t66aRax83EjnSyPrneQbEPEtUN3x&q=webdesign&limit=1&offset=0&rating=g&lang=en", this.gif)
         
     }
@@ -44,11 +44,11 @@ class MiniCard extends Component {
     ultimoProducto = (data) => {
         // console.log(data)
         this.setState({
-            nombre: data.data.name,  // en el state de este comnponente seteale en la propiedad  total el valor data.meta.total
-           price: data.data.price,
-           color: data.data.color_id,
-           talle: data.data.size_id,
-           status: data.data.status_id
+            nombre: data.data[0].name,  // en el state de este comnponente seteale en la propiedad  total el valor data.meta.total
+           price: data.data[0].price,
+           color: data.data[0].color_id,
+           talle: data.data[0].size_id,
+           status: data.data[0].status_id
         })
     }
 

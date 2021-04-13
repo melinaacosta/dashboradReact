@@ -8,7 +8,7 @@
 
 .shadow{
     padding: 20px 35px;
-    padding: 25px;
+    
     border-radius: 5px;
     background: #ffff;
     box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffff;
@@ -16,8 +16,8 @@
 
 
 .table {
-    background: #fddcdf;
-    color: #f65a6f;
+    background: #d6d8d9;
+    color: #3a3e41;
     
     text-align: center;
     padding: 25px;
@@ -30,36 +30,36 @@
     border-collapse: separate;
     box-sizing: border-box;
     text-indent: initial;
-    border-spacing: 2px;
+    border-spacing: 18px;
     border-color: grey;
-    border: 1px solid grey;
+    border: 1px solid rgb(65, 65, 65);
 }
 
 
 
 tr {
-    color: #f65a6f;
+    color: #3a3e41;
     width: 20%;
     text-align: left;
    
 }
 
 tfoot {
-    color: #f65a6f;
+    color: #3a3e41;
     display: table-footer-group;
     vertical-align: middle;
     border-color: inherit;
 }
 
 thead {
-    color: #f65a6f;
+    color: #3a3e41;
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
 }
 
 th {
-    color: #f65a6f;
+    color: #3a3e41;
     text-align: left;
     width: 20%;
     display: table-cell;
@@ -71,12 +71,15 @@ th {
 
 
 td {
-    color: #f65a6f;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.296);
+    color: #3a3e41;
     width: 20%;
 }
 
 .h1{
-    color: #f65a6f;
+    padding: 20px;
+    margin: 17px 0px;
+    color: #3a3e41;
     font-size: 20px;
     display: flex;
     align-items: center;

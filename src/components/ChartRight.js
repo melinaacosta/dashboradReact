@@ -6,7 +6,8 @@ class ChartRight extends Component {
     constructor(props) {
         super(props);   //ejecuta el constructor de component que es una clase de react
         this.state = {
-            arrayCategorias: []
+            arrayCategorias: [],
+            categories: []
         }
     }
 
@@ -18,16 +19,19 @@ class ChartRight extends Component {
     }
 
     componentDidMount() {
-        this.apiCall("http://localhost:3000/api/products/category", this.categorias);
+        
+        this.apiCall("http://localhost:3000/api/products/categories", this.categories);
        
 
         
     }
 
-   categorias = (data) => {
+  
+
+    categories = (data) => {
         // console.log(data)
         this.setState({
-            arrayCategorias: data.data,  // en el state de este comnponente seteale en la propiedad  total el valor data.meta.total
+            categories: data.data,  // en el state de este comnponente seteale en la propiedad  total el valor data.meta.total
         })
     }
 
@@ -45,8 +49,8 @@ class ChartRight extends Component {
                 <i className="fa fa-usd"></i>
             </div>
             <div className="charts__right__cards">
-            {this.state.arrayCategorias.map((categoria)=> { return <MiniChart category={categoria} />})}
-
+            
+            {this.state.categories.map((categoria )=> { return <MiniChart category={categoria} />})}
             </div>
         </div>
 

@@ -23,8 +23,9 @@ const App = () => {
     <div className="container">
      <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
      {/* <h1>App Dashboard</h1> */}
-     <Main nombre="Melina" />
      <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
+     <Main nombre="Melina" />
+     
      <List/>
     </div>
   );

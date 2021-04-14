@@ -21,7 +21,7 @@ class List extends Component {
     }
 
     componentDidMount() {
-        this.apiCall("http://localhost:3000/api/products", this.totalProductos);
+        this.apiCall("https://fulldesign.herokuapp.com/api/products", this.totalProductos);
        
 
         

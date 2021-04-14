@@ -20,9 +20,9 @@ class Card extends Component {
     }
 
     componentDidMount() {
-        this.apiCall("http://localhost:3000/api/products", this.totalProductos);
-        this.apiCall("http://localhost:3000/api/users", this.totalUsuarios);
-        this.apiCall("http://localhost:3000/api/products/18", this.totalCategorias);
+        this.apiCall("https://fulldesign.herokuapp.com/api/products", this.totalProductos);
+        this.apiCall("https://fulldesign.herokuapp.com/api/users", this.totalUsuarios);
+        this.apiCall("https://fulldesign.herokuapp.com/api/products/18", this.totalCategorias);
     }
 
     totalProductos = (data) => {

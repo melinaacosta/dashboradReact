@@ -19,8 +19,8 @@ class MiniCard extends Component {
     }
 
     componentDidMount() {
-        this.apiCall("http://localhost:3000/api/users/11", this.ultimoUsuario);
-        this.apiCall("http://localhost:3000/api/products/ultimo", this.ultimoProducto);
+        this.apiCall("https://fulldesign.herokuapp.com/api/users/11", this.ultimoUsuario);
+        this.apiCall("https://fulldesign.herokuapp.com/api/products/ultimo", this.ultimoProducto);
         this.apiCall("https://api.giphy.com/v1/stickers/search?api_key=Ig58t66aRax83EjnSyPrneQbEPEtUN3x&q=webdesign&limit=1&offset=0&rating=g&lang=en", this.gif)
         
     }

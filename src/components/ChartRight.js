@@ -20,7 +20,7 @@ class ChartRight extends Component {
 
     componentDidMount() {
         
-        this.apiCall("http://localhost:3000/api/products/categories", this.categories);
+        this.apiCall("https://fulldesign.herokuapp.com/api/products/categories", this.categories);
        
 
         

@@ -6,7 +6,6 @@ class ChartRight extends Component {
     constructor(props) {
         super(props);   //ejecuta el constructor de component que es una clase de react
         this.state = {
-            arrayCategorias: [],
             categories: []
         }
     }
@@ -50,7 +49,7 @@ class ChartRight extends Component {
             </div>
             <div className="charts__right__cards">
             
-            {this.state.categories.map((categoria )=> { return <MiniChart category={categoria} />})}
+            {this.state.categories.map((categoria)=> { return <MiniChart category={categoria} />})}
             </div>
         </div>
 

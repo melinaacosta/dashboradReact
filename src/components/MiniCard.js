@@ -19,7 +19,7 @@ class MiniCard extends Component {
     }
 
     componentDidMount() {
-        this.apiCall("https://fulldesign.herokuapp.com/api/users/11", this.ultimoUsuario);
+        this.apiCall("https://fulldesign.herokuapp.com/api/users/ultimo", this.ultimoUsuario);
         this.apiCall("https://fulldesign.herokuapp.com/api/products/ultimo", this.ultimoProducto);
         this.apiCall("https://api.giphy.com/v1/stickers/search?api_key=Ig58t66aRax83EjnSyPrneQbEPEtUN3x&q=webdesign&limit=1&offset=0&rating=g&lang=en", this.gif)
         
@@ -34,10 +34,10 @@ class MiniCard extends Component {
     ultimoUsuario = (data) => {
         // console.log(data)
         this.setState({
-            name: data.data.name,  // en el state de este comnponente seteale en la propiedad  total el valor data.meta.total
-           email: data.data.email,
-           avatar: data.data.avatar,
-           admin: data.data.admin
+            name: data.data[0].name,  // en el state de este comnponente seteale en la propiedad  total el valor data.meta.total
+           email: data.data[0].email,
+           avatar: data.data[0].avatar,
+           admin: data.data[0].admin
         })
     }
 
